@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="I'm thinking a number between 1 and 20"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="18sp"
+        android:textColor="#800000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:text="Can you guess it?"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="12dp"
+        android:textSize="25sp"
+        android:textColor="#050505"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter a number."
+        android:padding="12dp"
+        android:inputType="number"
+        android:textColor="#fd1a03"
+        android:textStyle="normal"
+        android:id="@+id/editTextId"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="120dp"
+            android:text="Guess"
+            android:id="@+id/buttonId"
+            android:onClick="guessOnClick"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
